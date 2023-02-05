@@ -891,6 +891,7 @@ body::after {
 }
 
 .play__button img {
+  max-width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1436,6 +1437,7 @@ body::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   max-width: 37.5rem;
   margin: 0 auto;
   gap: 1.5rem;
@@ -1530,8 +1532,7 @@ body::after {
   opacity: 0;
 }
 
-._watcher-view .loaded [data-transform-to-bottom] {
-  will-change: transform, opacity;
+.loaded [data-transform-to-bottom]._watcher-view {
   -webkit-animation-name: transform;
           animation-name: transform;
   -webkit-animation-duration: 1s;
@@ -1592,8 +1593,6 @@ body::after {
           animation-duration: 1s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -1666,6 +1665,8 @@ body::after {
 .header__logo {
   position: relative;
   z-index: 11;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .header._header-scroll {
@@ -1679,6 +1680,12 @@ body::after {
   -o-transition: top 0.5s ease 0s;
   transition: top 0.5s ease 0s;
   top: 0;
+}
+
+.menu__list {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0.625rem;
 }
 
 .menu__link {
@@ -2002,10 +2009,6 @@ body::after {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  -webkit-transform: translate(0, 100%);
-      -ms-transform: translate(0, 100%);
-          transform: translate(0, 100%);
-  opacity: 0;
 }
 
 .info-hero__decor {
@@ -2462,8 +2465,15 @@ body::after {
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   }
 
+  .loaded [data-transform-to-left]._watcher-view {
+    -webkit-animation-delay: 0.8s;
+            animation-delay: 0.8s;
+  }
+
   .header__actions {
     position: relative;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     z-index: 10;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2557,6 +2567,13 @@ body::after {
     max-width: 31.25rem;
   }
 
+  .info-hero {
+    -webkit-transform: translate(0, 100%);
+        -ms-transform: translate(0, 100%);
+            transform: translate(0, 100%);
+    opacity: 0;
+  }
+
   .who__content {
     max-width: 25rem;
     -ms-grid-column-align: end;
@@ -2642,7 +2659,9 @@ body::after {
   }
 
   .menu__list {
-    gap: 2.5rem;
+    -webkit-column-gap: 2.5rem;
+       -moz-column-gap: 2.5rem;
+            column-gap: 2.5rem;
   }
 
   .footer__items {
@@ -2930,7 +2949,9 @@ body::after {
   }
 
   .menu__list {
-    gap: 1.25rem;
+    -webkit-column-gap: 1.25rem;
+       -moz-column-gap: 1.25rem;
+            column-gap: 1.25rem;
   }
 
   .footer__items {
@@ -3586,8 +3607,8 @@ body::after {
   }
 
   .info-hero._watcher-view {
-    -webkit-animation-duration: 0s;
-            animation-duration: 0s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
   }
 
   .courses__action {
@@ -4358,15 +4379,19 @@ body::after {
     }
 }
 
-@supports (gap: clamp( 1.25rem , -3.9600840336rem  +  8.4033613445vw , 2.5rem )) {
+@supports ((-moz-column-gap: clamp( 1.25rem , -3.9600840336rem  +  8.4033613445vw , 2.5rem )) or (column-gap: clamp( 1.25rem , -3.9600840336rem  +  8.4033613445vw , 2.5rem ))) {
     .menu__list {
-      gap: clamp( 1.25rem , -3.9600840336rem  +  8.4033613445vw , 2.5rem );
+      -webkit-column-gap: clamp( 1.25rem , -3.9600840336rem  +  8.4033613445vw , 2.5rem );
+         -moz-column-gap: clamp( 1.25rem , -3.9600840336rem  +  8.4033613445vw , 2.5rem );
+              column-gap: clamp( 1.25rem , -3.9600840336rem  +  8.4033613445vw , 2.5rem );
     }
 }
 
-@supports not (gap: clamp( 1.25rem , -3.9600840336rem  +  8.4033613445vw , 2.5rem )) {
+@supports not ((-moz-column-gap: clamp( 1.25rem , -3.9600840336rem  +  8.4033613445vw , 2.5rem )) or (column-gap: clamp( 1.25rem , -3.9600840336rem  +  8.4033613445vw , 2.5rem ))) {
     .menu__list {
-      gap: calc(1.25rem + 1.25 * (100vw - 62rem) / 14.875);
+      -webkit-column-gap: calc(1.25rem + 1.25 * (100vw - 62rem) / 14.875);
+         -moz-column-gap: calc(1.25rem + 1.25 * (100vw - 62rem) / 14.875);
+              column-gap: calc(1.25rem + 1.25 * (100vw - 62rem) / 14.875);
     }
 }
 

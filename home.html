@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230204214936" media="all" async>
+	<link rel="stylesheet" href="css/style.min.css?_v=20230205145802">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Learn how to effective learn marketing">
@@ -34,22 +34,23 @@
 				<div class="header__actions">
 					<a data-da=".menu__body,767.98" href="#" class="header__button button">Get consultation</a>
 					<div data-da=".menu__body,479.98" class="header__cta cta">
-						<button type="button" data-popup="#sign-in" href="#" class="sign-in _icon-user">Login</button>
-						<button type="button" data-popup="#sign-up" href="#" class="sign-up">Register</button>
+						<button type="button" data-popup="#sign-in" class="sign-in _icon-user">Login</button>
+						<button type="button" data-popup="#sign-up" class="sign-up">Register</button>
 					</div>
 				</div>
 			</div>
 		</header>
-		<main class="page_home">
+		<main class="page page_main">
 			<section class="page__hero hero">
 				<div class="hero__container">
 					<div class="hero__top">
 						<div class="hero__body">
-							<div data-watch data-watch-once class="hero__play play">
+							<div class="hero__play play">
 								<button class="play__button" type="button">
 									<img src="img/icons/play.svg" alt="icon:play">
 								</button>
-								<span data-transform-to-bottom class="play__text">Play showreel</span>
+								<span data-transform-to-bottom data-watch data-watch-once class="play__text">Play
+									showreel</span>
 							</div>
 							<h1 data-watch data-watch-once data-transform-to-right class="hero__title title">Enjoy studying
 								with Createx Online Courses</h1>
@@ -112,7 +113,7 @@
 			</section>
 			<section class="page__courses courses">
 				<div class="courses__container">
-					<div class="courses__top">
+					<div data-watch data-watch-once data-transform-to-top class="courses__top">
 						<div class="courses__block-header">
 							<div class="block-header">
 								<h5 class="block-header__headline headline">Ready to learn?</h5>
@@ -209,20 +210,20 @@
 			</section>
 			<section class="page__benefits benefits">
 				<div class="benefits__container">
-					<div class="benefits__block-header">
+					<div data-watch data-watch-once data-transform-to-top class="benefits__block-header">
 						<div class="block-header">
 							<h5 class="block-header__headline headline">Our benefits</h5>
 							<h2 class="block-header__subtitle subtitle">That’s how we do it</h2>
 						</div>
 					</div>
-					<div data-tabs="800" data-tabs data-tabs-animate="1200" class="tabs">
-						<nav data-tabs-titles class="tabs__navigation">
+					<div data-tabs="800" data-tabs-animate="1200" class="tabs">
+						<nav data-watch data-watch-once data-transform-to-top data-tabs-titles class="tabs__navigation">
 							<button type="button" class="tabs__title _icon-star _tab-active">Experienced Tutors</button>
 							<button type="button" class="tabs__title _icon-like">Feedback & Support</button>
 							<button type="button" class="tabs__title _icon-book">24/7 Online Library</button>
 							<button type="button" class="tabs__title _icon-comments">Community</button>
 						</nav>
-						<div data-tabs-body class="tabs__content">
+						<div data-watch data-watch-once data-transform-to-right data-tabs-body class="tabs__content">
 							<div class="tabs__body">
 								<div class="tabs__inner">
 									<div class="tabs__content">
@@ -345,7 +346,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__cerfiticate">
+			<div class="page__cerfiticate">
 				<section class="certificate">
 					<div class="certificate__container">
 						<div data-watch data-watch-once data-transform-to-right class="certificate__body">
@@ -369,11 +370,11 @@
 						</div>
 					</div>
 				</section>
-			</section>
+			</div>
 			<section class="page__team-block team-block">
 				<div class="team-block__container">
 					<div class="team-block__inner">
-						<div class="team-block__block-header">
+						<div data-watch data-watch-once data-transform-to-top class="team-block__block-header">
 							<div class="block-header">
 								<h5 class="block-header__headline headline">Best tutors are all here</h5>
 								<h2 class="block-header__subtitle subtitle">Meet our team</h2>
@@ -384,7 +385,7 @@
 							<button aria-label="next-slide-arrow" name="previous-slide" type="button" class="controll__next controll__next_team-block _icon-arrow"></button>
 						</div>
 					</div>
-					<div class="team-block__slider swiper">
+					<div data-watch data-watch-once data-transform-to-right class="team-block__slider swiper">
 						<div class="team-block__wrapper swiper-wrapper">
 							<div class="team-block__slide swiper-slide">
 								<article class="card-team">
@@ -396,7 +397,7 @@
 											<a aria-label="icon:linked-in" href="#" class="card-team__link _icon-linked-In"> </a>
 										</div>
 									</div>
-									<div class="card-team__name">Dianne Russell</div>
+									<h4 class="card-team__name">Dianne Russell</h4>
 									<div class="card-team__description">Founder and CEO</div>
 								</article>
 							</div>
@@ -410,7 +411,7 @@
 											<a aria-label="icon:linked-in" href="#" class="card-team__link _icon-linked-In"> </a>
 										</div>
 									</div>
-									<div class="card-team__name">Jerome Bell</div>
+									<h4 class="card-team__name">Jerome Bell</h4>
 									<div class="card-team__description">Founder and Program Director</div>
 								</article>
 							</div>
@@ -424,7 +425,7 @@
 											<a aria-label="icon:linked-in" href="#" class="card-team__link _icon-linked-In"> </a>
 										</div>
 									</div>
-									<div class="card-team__name">Kristin Watson</div>
+									<h4 class="card-team__name">Kristin Watson</h4>
 									<div class="card-team__description">Marketer, Curator of Marketing Course</div>
 								</article>
 							</div>
@@ -438,7 +439,7 @@
 											<a aria-label="icon:linked-in" href="#" class="card-team__link _icon-linked-In"> </a>
 										</div>
 									</div>
-									<div class="card-team__name">Marvin McKinney</div>
+									<h4 class="card-team__name">Marvin McKinney</h4>
 									<div class="card-team__description">PM, Curator of Management Course</div>
 								</article>
 							</div>
@@ -448,13 +449,13 @@
 			</section>
 			<section class="page__testimonials testimonials">
 				<div class="testimonials__container">
-					<div class="testimonials__block-header">
+					<div data-watch data-watch-once data-transform-to-top class="testimonials__block-header">
 						<div class="block-header">
 							<h5 class="block-header__headline headline">TESTIMONIALS</h5>
 							<h2 class="block-header__subtitle subtitle">What our students say</h2>
 						</div>
 					</div>
-					<div class="testimonials__inner">
+					<div data-watch data-watch-once data-transform-to-left class="testimonials__inner">
 						<div class="testimonials__controll controll">
 							<button aria-label="previous-slide-arrow" name="next-slide" type="button" class="controll__prev controll__prev_testimonials _icon-arrow">
 							</button>
@@ -545,10 +546,10 @@
 					<div class="swiper-pagination"></div>
 				</div>
 			</section>
-			<section class="page__blog-block">
+			<div class="page__blog-block">
 				<section class="blog-block">
 					<div class="blog-block__container">
-						<div class="blog-block__inner">
+						<div data-watch data-watch-once data-transform-to-top class="blog-block__inner">
 							<div class="blog-block__block-header">
 								<div class="block-header">
 									<h5 class="block-header__headline headline">Our blog</h5>
@@ -558,7 +559,7 @@
 							<a href="#" class="blog-block__button button">Go to blog</a>
 						</div>
 						<div class="blog-block__cards">
-							<div class="blog-block__card card-blog">
+							<div data-watch data-watch-once data-transform-to-right class="blog-block__card card-blog">
 								<a href="#" class="card-blog__image">
 									<picture><source data-srcset="img/blog/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/blog/01.jpg" alt="image"></picture>
 									<span class="card-blog__headline _icon-mic">Podcast</span>
@@ -574,7 +575,7 @@
 									<a href="#" class="card-blog__button _icon-arrow">Listen</a>
 								</div>
 							</div>
-							<div class="blog-block__card card-blog">
+							<div data-watch data-watch-once data-transform-to-right class="blog-block__card card-blog">
 								<a href="#" class="card-blog__image">
 									<picture><source data-srcset="img/blog/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/blog/02.jpg" alt="image"></picture>
 									<span class="card-blog__headline _icon-video">Video</span>
@@ -590,7 +591,7 @@
 									<a href="#" class="card-blog__button _icon-arrow">Watch</a>
 								</div>
 							</div>
-							<div class="blog-block__card card-blog">
+							<div data-watch data-watch-once data-transform-to-right class="blog-block__card card-blog">
 								<a href="#" class="card-blog__image">
 									<picture><source data-srcset="img/blog/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/blog/03.jpg" alt="image"></picture>
 									<span class="card-blog__headline _icon-files">Article</span>
@@ -608,18 +609,18 @@
 						</div>
 					</div>
 				</section>
-			</section>
+			</div>
 			<section class="page__subscribe">
 				<div class="subscribe">
-					<div class="subscribe__container">
+					<div data-watch data-watch-once data-transform-to-top class="subscribe__container">
 						<div class="subscribe__block-header">
 							<div class="block-header">
 								<h5 class="block-header__headline headline">Don’t miss anything</h5>
 								<h2 class="block-header__subtitle subtitle">Subscribe to the Createx School announcements</h2>
 							</div>
 						</div>
-						<form action="#" class="subscribe__form form-subscripe">
-							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Your working email" class="input">
+						<form data-dev action="#" class="subscribe__form form-subscripe">
+							<input data-error="Incorrect email entered" data-required="email" data-validate autocomplete="off" type="email" name="form[]" placeholder="Your working email" class="input">
 							<button type="submit" class="subscribe__button button">Subscribe</button>
 						</form>
 					</div>
@@ -697,7 +698,7 @@
 						<div class="footer__form">
 							<div class="footer__label">SIGN UP TO OUR NEWSLETTER</div>
 							<form action="#" class="spollers-footer__form">
-								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Email address" class="input input_dark">
+								<input autocomplete="off" type="text" name="form[]" placeholder="Email address" class="input input_dark">
 								<button aria-label="submit-button" class="spollers-footer__button _icon-arrow" type="submit"></button>
 							</form>
 							<div class="spollers-footer__subscribe-info">*Subscribe to our newsletter to receive communications and
@@ -744,12 +745,12 @@
 					<form data-dev action="#" class="sign-in__form form-sign-in">
 						<div class="form-sign-in__line line">
 							<label class="line__form-label" for="sign-in-email">Email</label>
-							<input data-error="Incorrect email entered" data-validate data-required="email" id="sign-in-email" autocomplete="off" type="mail" name="form[]" data-error="Ошибка" placeholder="Your working email" class="input">
+							<input data-error="Incorrect email entered" data-validate data-required="email" id="sign-in-email" autocomplete="off" type="email" name="form[]" placeholder="Your working email" class="input">
 						</div>
 						<div class="form-sign-in__line line">
 							<label class="line__form-label" for="password">Password</label>
 							<div class="line__inner">
-								<input data-error="Password is required" data-validate data-required id="password" autocomplete="off" type="password" name="form[]" data-error="Ошибка" placeholder="" class="input input_viewpass">
+								<input data-error="Password is required" data-validate data-required id="password" autocomplete="off" type="password" name="form[]" placeholder="" class="input input_viewpass">
 								<button data-view class="line__button line__viewpass" type="button">
 								</button>
 							</div>
@@ -757,7 +758,7 @@
 						<div class="form-sign-in__actions">
 							<div class="form-sign-in__checkbox">
 								<div class="checkbox">
-									<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<input id="c_1" class="checkbox__input" type="checkbox" value="1" name="form[]">
 									<label for="c_1" class="checkbox__label"><span class="checkbox__text">Keep me signed
 											in</span></label>
 								</div>
@@ -796,16 +797,16 @@
 					<form data-dev action="#" class="sign-in__form form-sign-up">
 						<div class="form-sign-up__line line">
 							<label class="line__form-label" for="name">Full Name</label>
-							<input data-error="Name is required" data-required data-validate id="name" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Your full name" class="input">
+							<input data-error="Name is required" data-required data-validate id="name" autocomplete="off" type="text" name="form[]" placeholder="Your full name" class="input">
 						</div>
 						<div class="form-sign-up__line line">
 							<label class="line__form-label" for="email">Email</label>
-							<input data-error="Incorrect email entered" data-required="email" data-validate id="email" autocomplete="off" type="mail" name="form[]" data-error="Ошибка" placeholder="Your working email" class="input">
+							<input data-error="Incorrect email entered" data-required="email" data-validate id="email" autocomplete="off" type="email" name="form[]" placeholder="Your working email" class="input">
 						</div>
 						<div class="form-sign-up__line line">
 							<label class="line__form-label" for="password-new">Password</label>
 							<div class="line__inner">
-								<input data-validate data-error="Password is required" data-required id="password-new" autocomplete="off" type="password" name="form[]" data-error="Ошибка" placeholder="" class="input input_viewpass">
+								<input data-validate data-error="Password is required" data-required id="password-new" autocomplete="off" type="password" name="form[]" placeholder="" class="input input_viewpass">
 								<button data-view class="line__button line__viewpass" type="button">
 								</button>
 							</div>
@@ -813,7 +814,7 @@
 						<div class="form-sign-up__line line">
 							<label class="line__form-label" for="password-confirm">Confirm Password</label>
 							<div class="line__inner">
-								<input data-validate data-error="Password is required" data-required id="password-confirm" autocomplete="off" type="password" name="form[]" data-error="Ошибка" placeholder="" class="input input_viewpass">
+								<input data-validate data-error="Password is required" data-required id="password-confirm" autocomplete="off" type="password" name="form[]" placeholder="" class="input input_viewpass">
 								<button data-view class="line__button line__viewpass" type="button">
 								</button>
 							</div>
@@ -821,7 +822,7 @@
 						<div class="form-sign-in__actions">
 							<div class="form-sign-in__checkbox">
 								<div class="checkbox">
-									<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+									<input id="c_2" class="checkbox__input" type="checkbox" value="1" name="form[]">
 									<label for="c_2" class="checkbox__label"><span class="checkbox__text">Remember me</span></label>
 								</div>
 							</div>
@@ -842,7 +843,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230204214936"></script>
+	<script src="js/app.min.js?_v=20230205145802"></script>
 </body>
 
 </html>
